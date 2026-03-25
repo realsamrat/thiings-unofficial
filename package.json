@@ -1,0 +1,43 @@
+{
+  "name": "thiings-unofficial",
+  "version": "1.0.0",
+  "description": "MCP server and CLI for thiings.co — search, browse, and download 10,000+ AI-generated 3D icons",
+  "type": "module",
+  "bin": {
+    "thiings": "build/cli/index.js",
+    "thiings-mcp": "build/mcp/server.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "mcp": "node build/mcp/server.js",
+    "cli": "node build/cli/index.js"
+  },
+  "files": [
+    "build",
+    "README.md"
+  ],
+  "keywords": [
+    "thiings",
+    "icons",
+    "3d",
+    "mcp",
+    "cli",
+    "ai-generated"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realsamrat/thiings-unofficial.git"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^8.3.2",
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "chalk": "^5.4.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
